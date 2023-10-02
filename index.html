@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="m-0 p-0 bg-cyan-800">
+    <main>
+        <div class="Container bg-cyan-800 flex flex-col justify-center items-center mt-10">
+            <div>
+                <h1 class="text-5xl m-5">Welcome to Tic Tac Toe</h1>
+            </div>
+            <div class="m-5" >
+                <span class="text-3xl text-white turn">O's turn</span>
+            </div>
+            <div class="grid grid-rows-3 grid-cols-3 subContainer">
+                <div class="boxes">
+                    <span class="flex justify-center items-center h-28 w-28 text-[6vw] border p-2 border-l-0 border-t-0 hover:bg-white box"></span>
+                </div>
+                <div class="boxes">
+                    <span class="flex justify-center items-center h-28 w-28 text-[6vw] border p-2 border-t-0 hover:bg-white box"></span>
+                </div>
+                <div class="boxes">
+                    <span class="flex justify-center items-center h-28 w-28 text-[6vw] border p-2 border-t-0 border-r-0 hover:bg-white box"></span>
+                </div>
+                <div class="boxes">
+                    <span class="flex justify-center items-center h-28 w-28 text-[6vw] border p-2 border-l-0 hover:bg-white box"></span>
+                </div>
+                <div class="boxes">
+                    <span class="flex justify-center items-center h-28 w-28 text-[6vw] border p-2 hover:bg-white box"></span>
+                </div>
+                <div class="boxes">
+                    <span class="flex justify-center items-center h-28 w-28 text-[6vw] border p-2 border-r-0 hover:bg-white box"></span>
+                </div>
+                <div class="boxes">
+                    <span class="flex justify-center items-center h-28 w-28 text-[6vw] border p-2 border-b-0 border-l-0 hover:bg-white box"></span>
+                </div>
+                <div class="boxes">
+                    <span class="flex justify-center items-center h-28 w-28 text-[6vw] border p-2 border-b-0 hover:bg-white box"></span>
+                </div>
+                <div class="boxes">
+                    <span class="flex justify-center items-center h-28 w-28 text-[6vw] border p-2 border-b-0 border-r-0 hover:bg-white box"></span>
+                </div>
+            </div>
+            <div class="hidden message">
+                <span><img src="winner.gif" alt="winner"></span>
+            </div>
+            <div class="flex gap-20 justify-center m-5">
+                <button id="start" class="border p-2 bg-cyan-700 rounded-lg hover:bg-white">Start</button>
+                <button id="again" class="border p-2 bg-cyan-700 rounded-lg hover:bg-white">Try Again</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
